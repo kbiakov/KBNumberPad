@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KBNumberPad" customModule="KBNumberPad">
+            <connections>
+                <outlet property="clearButton" destination="BVh-hr-Ule" id="Vwz-dh-wKS"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="c1H-wW-vwZ"/>
+                <outlet property="doneButton" destination="4Dn-gJ-EXR" id="7Vc-Cj-eDC"/>
+                <outletCollection property="numberButtons" destination="VZd-3K-p6B" collectionClass="NSMutableArray" id="f5E-uU-lDo"/>
+                <outletCollection property="numberButtons" destination="54j-dM-5ze" collectionClass="NSMutableArray" id="tPa-eZ-Syc"/>
+                <outletCollection property="numberButtons" destination="dvb-02-Lsm" collectionClass="NSMutableArray" id="KNe-J9-Fvl"/>
+                <outletCollection property="numberButtons" destination="yNr-Eq-P34" collectionClass="NSMutableArray" id="OOZ-7X-Ea6"/>
+                <outletCollection property="numberButtons" destination="b0g-lA-S4l" collectionClass="NSMutableArray" id="MAU-MZ-vyV"/>
+                <outletCollection property="numberButtons" destination="x1e-W0-ig7" collectionClass="NSMutableArray" id="EXp-sV-Woo"/>
+                <outletCollection property="numberButtons" destination="MYk-GJ-8Yo" collectionClass="NSMutableArray" id="QUw-96-p1M"/>
+                <outletCollection property="numberButtons" destination="doL-Wz-x76" collectionClass="NSMutableArray" id="zmo-fj-pl7"/>
+                <outletCollection property="numberButtons" destination="83x-NG-ifX" collectionClass="NSMutableArray" id="H8V-pN-nZd"/>
+                <outletCollection property="numberButtons" destination="lpW-FY-IsA" collectionClass="NSMutableArray" id="dQu-kM-IGe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="285"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-Cr-x05">
+                    <rect key="frame" x="0.0" y="1" width="423" height="284"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-Pk-GKq">
+                            <rect key="frame" x="0.0" y="0.0" width="423" height="70.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54j-dM-5ze">
+                                    <rect key="frame" x="0.0" y="0.0" width="140.5" height="70.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="1"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="XBM-Zr-jev"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvb-02-Lsm">
+                                    <rect key="frame" x="141.5" y="0.0" width="140" height="70.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="2"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="Sdt-5R-3Q4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNr-Eq-P34">
+                                    <rect key="frame" x="282.5" y="0.0" width="140.5" height="70.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="3"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="3Pc-WV-FDg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="hGk-dl-OSK">
+                            <rect key="frame" x="0.0" y="71.5" width="423" height="70"/>
+                            <subviews>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0g-lA-S4l">
+                                    <rect key="frame" x="0.0" y="0.0" width="140.5" height="70"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="4"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="rnt-xb-B1Z"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1e-W0-ig7">
+                                    <rect key="frame" x="141.5" y="0.0" width="140" height="70"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="5"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="GxN-Sf-786"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYk-GJ-8Yo">
+                                    <rect key="frame" x="282.5" y="0.0" width="140.5" height="70"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="6"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="clK-bl-xvc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gRe-OE-ecg">
+                            <rect key="frame" x="0.0" y="142.5" width="423" height="70.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-3K-p6B">
+                                    <rect key="frame" x="0.0" y="0.0" width="140.5" height="70.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="7"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="cwc-kg-bMJ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doL-Wz-x76">
+                                    <rect key="frame" x="141.5" y="0.0" width="140" height="70.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="8"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="zJm-JM-diV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83x-NG-ifX">
+                                    <rect key="frame" x="282.5" y="0.0" width="140.5" height="70.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="9"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="W6T-9R-zDl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WTZ-qZ-wuH">
+                            <rect key="frame" x="0.0" y="214" width="423" height="70"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-gJ-EXR">
+                                    <rect key="frame" x="0.0" y="0.0" width="140.5" height="70"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Done"/>
+                                    <connections>
+                                        <action selector="onDoneClicked:" destination="-1" eventType="touchDown" id="W9d-85-MX2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpW-FY-IsA">
+                                    <rect key="frame" x="141.5" y="0.0" width="140" height="70"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="0"/>
+                                    <connections>
+                                        <action selector="onNumberClicked:" destination="-1" eventType="touchDown" id="etk-a8-YIF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVh-hr-Ule">
+                                    <rect key="frame" x="282.5" y="0.0" width="140.5" height="70"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="ClearSymbolIcon"/>
+                                    <connections>
+                                        <action selector="onClearClicked:" destination="-1" eventType="touchDown" id="B50-V2-0mx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4cX-Cr-x05" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WRX-k8-TwI"/>
+                <constraint firstAttribute="trailing" secondItem="4cX-Cr-x05" secondAttribute="trailing" id="l9G-bg-vjq"/>
+                <constraint firstItem="4cX-Cr-x05" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="rrp-tZ-UUe"/>
+                <constraint firstAttribute="bottom" secondItem="4cX-Cr-x05" secondAttribute="bottom" id="xPr-nt-uhn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="502.5" y="338.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ClearSymbolIcon" width="32" height="32"/>
+    </resources>
+</document>
