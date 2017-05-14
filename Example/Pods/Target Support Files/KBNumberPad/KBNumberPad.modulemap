@@ -1,0 +1,6 @@
+framework module KBNumberPad {
+  umbrella header "KBNumberPad-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KBNumberPad_Example' do
+  pod 'KBNumberPad', :path => '../'
+
+  target 'KBNumberPad_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
