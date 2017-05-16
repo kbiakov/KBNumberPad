@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KBNumberPad'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'Customizable number pad for as replacement of default.'
 
   s.description      = <<-DESC
