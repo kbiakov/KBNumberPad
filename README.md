@@ -39,6 +39,24 @@ Then, run the following command:
 $ pod install
 ```
 
+## Usage
+You can customize base components of this number pad view as follows:
+```Swift
+let numberPad = KBNumberPad()
+numberPad.setDelimiterColor(UIColor.lightGray)
+numberPad.setButtonsColor(UIColor.black)
+numberPad.setButtonsBackgroundColor(UIColor.white)
+```
+
+This snippet shows that all buttons grouped, but there is methods to do setup separately like:
+```Swift
+numberPad.setNumberButtonsColor(UIColor.black)
+numberPad.setClearButtonColor(UIColor.darkGray)
+numberPad.setDoneButtonColor(UIColor.darkGray)
+```
+
+There is params to customize: it's __color__ of grouped or all buttons, __font__ & __background__.
+
 ## Screenshots
 [![KBNumberPad_iOS_0](https://s21.postimg.org/w7aup8887/2017-05-14_20.29.02.png)](https://s21.postimg.org/w7aup8887/2017-05-14_20.29.02.png)
 [![KBNumberPad_iOS_1](https://s16.postimg.org/6pmpy72ut/2017-05-14_20.51.04.png)](https://s16.postimg.org/6pmpy72ut/2017-05-14_20.51.04.png)
