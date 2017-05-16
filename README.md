@@ -48,4 +48,4 @@ $ pod install
 ### [Kirill Biakov](https://github.com/kbiakov)
 
 ## License
-<b>KBNumberPad</b> is available under the ![Apache License 2.0](https://github.com/kbiakov/KBNumberPad/blob/master/LICENSE) license.
+<b>KBNumberPad</b> is available under the [Apache License 2.0](https://github.com/kbiakov/KBNumberPad/blob/master/LICENSE) license.
