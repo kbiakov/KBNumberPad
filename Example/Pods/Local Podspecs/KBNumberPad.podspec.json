@@ -28,7 +28,7 @@
   "frameworks": "UIKit",
   "dependencies": {
     "SnapKit": [
-      "~> 3.2.0"
+
     ]
   }
 }
