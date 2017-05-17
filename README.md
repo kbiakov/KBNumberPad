@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/KBNumberPad.svg?style=flat)](http://cocoapods.org/pods/KBNumberPad)
 [![Platform](https://img.shields.io/cocoapods/p/KBNumberPad.svg?style=flat)](http://cocoapods.org/pods/KBNumberPad)
 
-<b>KBNumberPad</b> is a customizable number pad for as replacement of default.
+<b>KBNumberPad</b> is a customizable number pad as replacement of default.
 
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -58,9 +58,9 @@ numberPad.setDoneButtonColor(UIColor.darkGray)
 There is params to customize: it's __color__ of grouped or all buttons, __font__ & __background__.
 
 ## Screenshots
-[![KBNumberPad_iOS_0](https://s21.postimg.org/w7aup8887/2017-05-14_20.29.02.png)](https://s21.postimg.org/w7aup8887/2017-05-14_20.29.02.png)
-[![KBNumberPad_iOS_1](https://s16.postimg.org/6pmpy72ut/2017-05-14_20.51.04.png)](https://s16.postimg.org/6pmpy72ut/2017-05-14_20.51.04.png)
-[![KBNumberPad_iOS_2](https://s3.postimg.org/mah7jtcmr/2017-05-14_20.59.17.png)](https://s3.postimg.org/mah7jtcmr/2017-05-14_20.59.17.png)
+[![2017-05-14_20.29.02.png](https://s3.postimg.org/r1fswvhg3/2017-05-14_20.29.02.png)](https://postimg.org/image/7wcjn42rz/)
+[![2017-05-14_20.51.04.png](https://s13.postimg.org/f7akftz3b/2017-05-14_20.51.04.png)](https://postimg.org/image/qwek3sq1v/)
+[![2017-05-14_20.59.17.png](https://s12.postimg.org/518601cm5/2017-05-14_20.59.17.png)](https://postimg.org/image/jx6p7mo0p/)
 
 ## Author
 ### [Kirill Biakov](https://github.com/kbiakov)
