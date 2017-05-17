@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'KBNumberPad'
   s.version          = '1.0.0'
-  s.summary          = 'Customizable number pad for as replacement of default.'
+  s.summary          = 'Customizable number pad as replacement of default.'
 
   s.description      = <<-DESC
-KBNumberPad is a customizable number pad for as replacement of default.
+KBNumberPad is a customizable number pad as replacement of default.
                        DESC
 
   s.homepage         = 'https://github.com/kbiakov/KBNumberPad'

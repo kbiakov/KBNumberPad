@@ -10,6 +10,7 @@ podfile: Example/Podfile
 before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --project-directory=Example
+- pod repo update master
 
 script:
 - set -o pipefail && xcodebuild test -workspace Example/KBNumberPad.xcworkspace -scheme KBNumberPad-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty

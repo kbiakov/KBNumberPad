@@ -1,9 +1,14 @@
 {
   "name": "KBNumberPad",
   "version": "1.0.0",
-  "summary": "Customizable number pad for iOS as replacement of default.",
-  "description": "Customizable number pad for iOS as replacement of default.",
+  "summary": "Customizable number pad as replacement of default.",
+  "description": "KBNumberPad is a customizable number pad as replacement of default.",
   "homepage": "https://github.com/kbiakov/KBNumberPad",
+  "screenshots": [
+    "https://s21.postimg.org/w7aup8887/2017-05-14_20.29.02.png",
+    "https://s16.postimg.org/6pmpy72ut/2017-05-14_20.51.04.png",
+    "https://s3.postimg.org/mah7jtcmr/2017-05-14_20.59.17.png"
+  ],
   "license": {
     "type": "Apache 2.0",
     "file": "LICENSE"
@@ -20,12 +25,6 @@
   },
   "source_files": "KBNumberPad/Classes/**/*",
   "resources": "KBNumberPad/Assets/*.xcassets",
-  "resource_bundles": {
-    "KBNumberPad": [
-      "Resources/**/*.{png}",
-      "Pod/**/*.xib"
-    ]
-  },
   "frameworks": "UIKit",
   "dependencies": {
     "SnapKit": [
