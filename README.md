@@ -48,14 +48,15 @@ numberPad.setButtonsColor(UIColor.black)
 numberPad.setButtonsBackgroundColor(UIColor.white)
 ```
 
-This snippet shows that all buttons grouped, but there is methods to do setup separately like:
+This snippet shows that all buttons grouped, but there are methods to do setup separately like:
 ```Swift
 numberPad.setNumberButtonsColor(UIColor.black)
 numberPad.setClearButtonColor(UIColor.darkGray)
 numberPad.setDoneButtonColor(UIColor.darkGray)
 ```
 
-There is params to customize: it's __color__ of grouped or all buttons, __font__ & __background__. Also you can change the __icon__ for clear button.
+There is params to customize: it's __color__ of grouped or all buttons, __font__ & __background__.
+Also you can change the __icon__ for clear button.
 
 ## Screenshots
 [![2017-05-14_20.29.02.png](https://s3.postimg.org/r1fswvhg3/2017-05-14_20.29.02.png)](https://postimg.org/image/7wcjn42rz/)
