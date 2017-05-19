@@ -27,5 +27,4 @@ KBNumberPad is a customizable number pad as replacement of default.
   # }
 
   s.frameworks = 'UIKit'
-  s.dependency 'SnapKit'
 end

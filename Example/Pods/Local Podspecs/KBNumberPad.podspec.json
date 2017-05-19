@@ -25,10 +25,5 @@
   },
   "source_files": "KBNumberPad/Classes/**/*",
   "resources": "KBNumberPad/Assets/*.xcassets",
-  "frameworks": "UIKit",
-  "dependencies": {
-    "SnapKit": [
-
-    ]
-  }
+  "frameworks": "UIKit"
 }

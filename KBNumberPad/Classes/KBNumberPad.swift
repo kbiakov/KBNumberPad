@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SnapKit
 
 // MARK: - Delegate
 
@@ -64,10 +63,6 @@ public class KBNumberPad: UIView {
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
-        
-        containerView.snp.makeConstraints { make -> Void in
-            make.edges.equalTo(self)
-        }
     }
     
     fileprivate func loadIcon(name: String) -> UIImage? {

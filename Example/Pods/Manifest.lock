@@ -1,7 +1,5 @@
 PODS:
-  - KBNumberPad (1.0.0):
-    - SnapKit
-  - SnapKit (3.2.0)
+  - KBNumberPad (1.0.0)
 
 DEPENDENCIES:
   - KBNumberPad (from `../`)
@@ -11,8 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KBNumberPad: 48484e993cce6f4a2ec9a58c0e91ed2e0e49348d
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  KBNumberPad: 85fca8e8e2cf110bfdc4c55413cc87ea660a1b68
 
 PODFILE CHECKSUM: fb5d59fb5543c58972b2aafd69f360a21f10971d
 
