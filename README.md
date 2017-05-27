@@ -30,7 +30,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'KBNumberPad', '~> 1.0.0'
+    pod 'KBNumberPad', '~> 1.0.1'
 end
 ```
 
@@ -40,9 +40,32 @@ $ pod install
 ```
 
 ## Usage
-You can customize base components of this number pad view as follows:
+
+1. Create input view (and customize, see section below):
 ```Swift
 let numberPad = KBNumberPad()
+```
+
+2. Set as input view for your text field (or other):
+```Swift
+textField.inputView = numberPad
+```
+
+3. Set delegate:
+```Swift
+numberPad.delegate = self
+```
+
+4. Define behavior of 3 callbacks:
+```Swift
+func onNumberClicked(numberPad: KBNumberPad, number: Int) {}
+func onDoneClicked(numberPad: KBNumberPad) {}
+func onClearClicked(numberPad: KBNumberPad) {}
+```
+
+### Customization
+You can customize base components of this number pad view as follows:
+```Swift
 numberPad.setDelimiterColor(UIColor.lightGray)
 numberPad.setButtonsColor(UIColor.black)
 numberPad.setButtonsBackgroundColor(UIColor.white)
