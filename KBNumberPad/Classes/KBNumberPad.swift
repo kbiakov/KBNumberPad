@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SnapKit
 
 // MARK: - Delegate
 
@@ -42,6 +41,16 @@ public class KBNumberPad: UIView {
         self.init(frame: KBNumberPad.defaultRect())
     }
     
+    convenience public init(doneTitle: String) {
+        self.init(frame: KBNumberPad.defaultRect())
+        doneButton.setTitle(doneTitle, for: .normal)
+    }
+    
+    convenience public init(doneImage: UIImage) {
+        self.init(frame: KBNumberPad.defaultRect())
+        doneButton.setImage(doneImage, for: .normal)
+    }
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setupViewFromXib()
@@ -64,10 +73,6 @@ public class KBNumberPad: UIView {
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
-        
-        containerView.snp.makeConstraints { make -> Void in
-            make.edges.equalTo(self)
-        }
     }
     
     fileprivate func loadIcon(name: String) -> UIImage? {
