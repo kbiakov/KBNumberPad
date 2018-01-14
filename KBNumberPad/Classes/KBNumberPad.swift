@@ -41,6 +41,16 @@ public class KBNumberPad: UIView {
         self.init(frame: KBNumberPad.defaultRect())
     }
     
+    convenience public init(doneTitle: String) {
+        self.init(frame: KBNumberPad.defaultRect())
+        doneButton.setTitle(doneTitle, for: .normal)
+    }
+    
+    convenience public init(doneImage: UIImage) {
+        self.init(frame: KBNumberPad.defaultRect())
+        doneButton.setImage(doneImage, for: .normal)
+    }
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setupViewFromXib()
